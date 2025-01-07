@@ -16,7 +16,7 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -subj "/C=FR/ST=Auvergne-Rhone-Alpes/L=Lyon/O=42School/CN=viphilip.42.fr"
 
 # Copier les fichiers de configuration
-COPY conf/default.conf /etc/nginx/conf.d/
+COPY conf/server.conf /etc/nginx/conf.d/
 
 # Exposer le port HTTPS (443)
 EXPOSE 443
